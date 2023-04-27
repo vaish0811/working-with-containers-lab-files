@@ -1,0 +1,10 @@
+version: "3"
+services:
+  frontend:
+    image: python-frontend
+    container_name: python-frontend-container
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
